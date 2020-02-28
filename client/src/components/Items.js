@@ -5,10 +5,10 @@ function Items({ items }) {
         return (
             <div className="box col-3" key={item.id}>
                 <div className="card p-2">
-                    <a href={item.link}>
-                        <img className="card-img-top" src={item.image} alt={item.name} />
+                    <a href={""}>
+                        <img className="card-img-top" src={item.images[0].src} alt={item.title} />
                         <div className="card-body">
-                            <p className="card-title">{item.name}</p>
+                            <p className="card-title">{item.title}</p>
                             <p className="card-subtitle">{item.price}</p>
                         </div>
                     </a>
